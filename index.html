@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Explained | Understanding Technology, One Concept at a Time</title>
+  <meta name="description" content="An interactive educational website simplifying artificial intelligence, cloud computing, cybersecurity, web development, data science, and emerging tech.">
+  <meta name="author" content="Abhinav Tiwary">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="#/home" class="logo">
+        <i class="fa-solid fa-microchip" style="color: var(--accent-purple);"></i>
+        <span>Tech Explained</span>
+      </a>
+      
+      <button class="hamburger" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#/home" class="nav-link">Home</a></li>
+        <li><a href="#/about" class="nav-link">About</a></li>
+        <li><a href="#/ai" class="nav-link">AI</a></li>
+        <li><a href="#/cloud" class="nav-link">Cloud</a></li>
+        <li><a href="#/cybersecurity" class="nav-link">Cybersecurity</a></li>
+        <li><a href="#/webdevelopment" class="nav-link">Web Dev</a></li>
+        <li><a href="#/datascience" class="nav-link">Data Science</a></li>
+        <li><a href="#/emergingtech" class="nav-link">Emerging Tech</a></li>
+        <li><a href="#/careerpaths" class="nav-link">Career Paths</a></li>
+        <li><a href="#/timeline" class="nav-link">Timeline</a></li>
+        <li><a href="#/faq" class="nav-link">FAQ</a></li>
+        <li><a href="#/contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Views Container -->
+  <main class="container" style="padding-top: 20px; padding-bottom: 60px;">
+
+    <!-- ==========================================
+         1. HOME VIEW
+         ========================================== -->
+    <section id="section-home" class="page-view active">
+      <div class="hero-section">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-graduation-cap"></i> Understanding Technology Made Simple
+          </div>
+          <h1>Understanding Technology <br><span class="gradient-text-purple-cyan">One Concept at a Time</span></h1>
+          <p>Explore the world of AI, Cybersecurity, Cloud Computing, Data Science, and more through easy-to-understand explanations, real-world examples, and visual simulations.</p>
+          <div class="hero-actions">
+            <a href="#/ai" class="btn btn-primary route-btn">Explore Topics <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#/about" class="btn btn-secondary route-btn">Start Learning</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistics Section -->
+      <div class="stats-section glass-panel">
+        <div class="stat-item">
+          <div class="stat-number" data-target="50" data-suffix="+">0</div>
+          <div class="stat-label">Technology Concepts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="10" data-suffix="+">0</div>
+          <div class="stat-label">Major Technology Domains</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Beginner-Friendly Content</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="200" data-suffix="+">0</div>
+          <div class="stat-label">Real-World Examples</div>
+        </div>
+      </div>
+
+      <!-- Featured Topics -->
+      <div class="section-header">
+        <h2>Featured Learning Topics</h2>
+        <p>Choose a track below to start demystifying complex technologies with our interactive models.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- AI -->
+        <div class="topic-card glass-panel">
+          <div class="topic-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Artificial Intelligence</h3>
+          <p>Uncover how algorithms learn patterns, predict behaviors, and generate content. Experience a neural network simulation training process in real time.</p>
+          <a href="#/ai" class="learn-more route-btn">Explore AI <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- Cloud -->
+        <div class="topic-card glass-panel">
+          <div class="topic-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3>Cloud Computing</h3>
+          <p>Learn about hosting, virtual databases, and infrastructure tiers (IaaS, PaaS, SaaS) using our interactive model explorer.</p>
+          <a href="#/cloud" class="learn-more route-btn">Explore Cloud <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- Cybersecurity -->
+        <div class="topic-card glass-panel">
+          <div class="topic-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Cybersecurity</h3>
+          <p>Equip yourself against malicious threats. Play our interactive phishing detector game and test your security hygiene scorecard.</p>
+          <a href="#/cybersecurity" class="learn-more route-btn">Explore Security <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- Web Dev -->
+        <div class="topic-card glass-panel">
+          <div class="topic-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Discover the frontend and backend architectures that run modern websites. Run and customize web scripts in our live code playground.</p>
+          <a href="#/webdevelopment" class="learn-more route-btn">Explore Web Dev <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- Data Science -->
+        <div class="topic-card glass-panel">
+          <div class="topic-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Data Science</h3>
+          <p>Understand the lifecycle of data extraction, cleaning, and predictive analysis. Simulate a data pipeline to compile charts dynamically.</p>
+          <a href="#/datascience" class="learn-more route-btn">Explore Data Science <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- Emerging Tech -->
+        <div class="topic-card glass-panel">
+          <div class="topic-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+          <h3>Emerging Technologies</h3>
+          <p>Investigate next-generation fields: Blockchain ledgers, IoT smart networks, and Quantum nodes. Mine and add custom blocks to a visual ledger.</p>
+          <a href="#/emergingtech" class="learn-more route-btn">Explore Emerging Tech <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Timeline Call to Action Banner -->
+      <div class="glass-panel" style="padding: 40px; margin-top: 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05)); border-color: rgba(139, 92, 246, 0.25);">
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="margin-bottom: 8px;"><i class="fa-solid fa-clock-rotate-left" style="color: var(--accent-cyan); margin-right: 8px;"></i> Technology Evolution Timeline</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">From the first vacuum tube computers in the 1940s to the 2020s generative AI boom, explore the milestones that built modern history.</p>
+        </div>
+        <a href="#/timeline" class="btn btn-primary route-btn" style="box-shadow: 0 4px 14px rgba(6, 182, 212, 0.3); background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));">Explore Tech History</a>
+      </div>
+
+      <!-- Why Learn Technology -->
+      <div class="why-learn-section">
+        <div class="section-header" style="margin-bottom: 30px;">
+          <h2>Why Learn Technology?</h2>
+          <p>Modern literacy requires understanding the digital backbone of our world.</p>
+        </div>
+        
+        <div class="grid-4">
+          <div class="why-card glass-panel">
+            <div class="why-card-inner">
+              <div class="icon-circle">🧠</div>
+              <h4>Understand Innovations</h4>
+              <p>Know how the tools you use daily function, from search engines to recommendations.</p>
+            </div>
+          </div>
+          <div class="why-card glass-panel">
+            <div class="why-card-inner">
+              <div class="icon-circle">💼</div>
+              <h4>Career Opportunities</h4>
+              <p>Technology fields offer some of the most dynamic, high-paying jobs in the world.</p>
+            </div>
+          </div>
+          <div class="why-card glass-panel">
+            <div class="why-card-inner">
+              <div class="icon-circle">🌍</div>
+              <h4>Stay Updated</h4>
+              <p>Keep pace with rapid digital shifts and avoid security risks in a connected landscape.</p>
+            </div>
+          </div>
+          <div class="why-card glass-panel">
+            <div class="why-card-inner">
+              <div class="icon-circle">🚀</div>
+              <h4>Future-Ready Skills</h4>
+              <p>Develop logical reasoning, analytics skills, and technological problem-solving capabilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         2. ABOUT VIEW
+         ========================================== -->
+    <section id="section-about" class="page-view">
+      <div class="section-header">
+        <h2>About Tech Explained</h2>
+        <p>Simplifying complex technology so anyone can understand it.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>Who We Are</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px; margin-bottom: 24px;">
+            Tech Explained is an open learning platform designed to demystify complex, buzzword-heavy concepts in modern technology. We believe that technology should be accessible to everyone, regardless of academic background or programming experience.
+          </p>
+          <h3>Our Mission</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px;">
+            To provide clear definitions, real-world analogies, and interactive visual aids that bridge the gap between technical complexity and intuitive understanding.
+          </p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>Who Is This For?</h3>
+          <div class="about-features">
+            <div class="feature-box">
+              <i class="fa-solid fa-graduation-cap" style="color: var(--accent-purple); font-size: 1.5rem;"></i>
+              <h4>Students</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Supplement computer science or digital curriculum.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fa-solid fa-seedling" style="color: var(--accent-indigo); font-size: 1.5rem;"></i>
+              <h4>Beginners</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Start learning technical concepts from absolute scratch.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fa-solid fa-repeat" style="color: var(--accent-cyan); font-size: 1.5rem;"></i>
+              <h4>Career Switchers</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Build baseline knowledge to switch to a tech career.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fa-solid fa-fire" style="color: var(--success); font-size: 1.5rem;"></i>
+              <h4>Tech Enthusiasts</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Keep up to date with emergent tech paradigms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Approach Tabbed Component -->
+      <div class="approach-section glass-panel" style="padding: 40px;">
+        <h3 style="text-align: center; margin-bottom: 12px;">Our Learning Approach</h3>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 30px;">We believe in four pillars of educational pedagogy.</p>
+        
+        <div class="approach-tabs">
+          <button class="approach-tab-btn active" data-tab="approach-definitions">Definitions</button>
+          <button class="approach-tab-btn" data-tab="approach-examples">Real-Life Examples</button>
+          <button class="approach-tab-btn" data-tab="approach-visuals">Visual Explanations</button>
+          <button class="approach-tab-btn" data-tab="approach-industry">Industry Applications</button>
+        </div>
+
+        <div class="approach-content-box">
+          <!-- Definitions -->
+          <div class="approach-panel active" id="approach-definitions">
+            <div>
+              <h4>Simple Definitions</h4>
+              <p style="color: var(--text-secondary); margin-top: 14px;">We break down tech jargon into clear, plain English. We avoid acronyms without introducing them first, and explain core mechanisms step by step.</p>
+            </div>
+            <div class="approach-demo-visual">
+              <i class="fa-solid fa-book" style="font-size: 3.5rem; color: var(--accent-purple); margin-bottom: 12px;"></i>
+              <span style="font-weight: 600;">Jargon-Free Explanations</span>
+            </div>
+          </div>
+
+          <!-- Real-Life Examples -->
+          <div class="approach-panel" id="approach-examples">
+            <div>
+              <h4>Real-Life Analogies</h4>
+              <p style="color: var(--text-secondary); margin-top: 14px;">We relate technology to everyday concepts. For example, comparing Cloud Server models to leasing vs. renting vs. buying a home, making complex architectures intuitive.</p>
+            </div>
+            <div class="approach-demo-visual">
+              <i class="fa-solid fa-house-laptop" style="font-size: 3.5rem; color: var(--accent-indigo); margin-bottom: 12px;"></i>
+              <span style="font-weight: 600;">Everyday Connections</span>
+            </div>
+          </div>
+
+          <!-- Visual Explanations -->
+          <div class="approach-panel" id="approach-visuals">
+            <div>
+              <h4>Interactive visual modules</h4>
+              <p style="color: var(--text-secondary); margin-top: 14px;">Instead of reading long blocks of text, you can simulate training an AI model, editing sample scripts, or adding transaction blocks to a blockchain network.</p>
+            </div>
+            <div class="approach-demo-visual">
+              <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 3.5rem; color: var(--accent-cyan); margin-bottom: 12px;"></i>
+              <span style="font-weight: 600;">Interactive Simulations</span>
+            </div>
+          </div>
+
+          <!-- Industry Applications -->
+          <div class="approach-panel" id="approach-industry">
+            <div>
+              <h4>Industry Use Cases</h4>
+              <p style="color: var(--text-secondary); margin-top: 14px;">See how top-tier technology products (like Netflix recommendation grids or Amazon warehousing robots) operate under the hood to handle global operations.</p>
+            </div>
+            <div class="approach-demo-visual">
+              <i class="fa-solid fa-building-columns" style="font-size: 3.5rem; color: var(--success); margin-bottom: 12px;"></i>
+              <span style="font-weight: 600;">Corporate Deployments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. ARTIFICIAL INTELLIGENCE VIEW
+         ========================================== -->
+    <section id="section-ai" class="page-view">
+      <div class="section-header">
+        <h2>Artificial Intelligence (AI)</h2>
+        <p>Demystifying how neural networks learn, reason, and make decisions.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>What is AI?</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px; margin-bottom: 20px;">
+            Artificial Intelligence is a field of computer science dedicated to building software systems capable of performing tasks that typically require human cognitive abilities, such as learning, pattern recognition, reasoning, and problem-solving.
+          </p>
+          <p style="color: var(--text-secondary);">
+            Modern AI relies heavily on <strong>Machine Learning (ML)</strong>, where systems improve their accuracy over time by finding structural relationships inside raw data instead of following hardcoded rules.
+          </p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>Types of AI</h3>
+          <div class="toggle-grid">
+            <div class="toggle-item active" data-type="narrow">Narrow AI</div>
+            <div class="toggle-item" data-type="general">General AI (AGI)</div>
+            <div class="toggle-item" data-type="generative">Generative AI</div>
+          </div>
+          <div id="ai-type-details" class="simulator-box" style="margin-top: 0; min-height: 120px;">
+            <h4>Narrow AI (Weak AI)</h4>
+            <p>Designed and trained for a specific task. Examples include face recognition, weather filters, or Google Search algorithms. It operates under a limited context and cannot generalize beyond its domain.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Training Simulator -->
+      <div class="interactive-card glass-panel">
+        <h3>🤖 Interactive Neural Network Simulator</h3>
+        <p style="color: var(--text-secondary); margin-top: 8px;">Run a step-by-step model training simulation to classify an input image. Click the stages below to understand the pipeline lifecycle.</p>
+        
+        <div class="ai-pipeline">
+          <div class="pipeline-step" id="ai-step-0">
+            <div class="pipeline-step-num">Step 1</div>
+            <h5>Data Collection</h5>
+            <p>Gather & digitize labels</p>
+          </div>
+          <div class="pipeline-step" id="ai-step-1">
+            <div class="pipeline-step-num">Step 2</div>
+            <h5>Training Model</h5>
+            <p>Optimize grid weights</p>
+          </div>
+          <div class="pipeline-step" id="ai-step-2">
+            <div class="pipeline-step-num">Step 3</div>
+            <h5>Prediction</h5>
+            <p>Evaluate probability</p>
+          </div>
+          <div class="pipeline-step" id="ai-step-3">
+            <div class="pipeline-step-num">Step 4</div>
+            <h5>Decision Making</h5>
+            <p>Output final class</p>
+          </div>
+        </div>
+
+        <div class="simulator-box">
+          <div class="sim-preview-area">
+            <div class="sim-visual-display">
+              <span style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px; font-weight: 600;">MODEL INPUT SCANNER</span>
+              <div class="sim-data-grid" style="width: 120px; height: 120px;">
+                <div class="sim-pixel" id="p1"></div>
+                <div class="sim-pixel" id="p2"></div>
+                <div class="sim-pixel" id="p3"></div>
+                <div class="sim-pixel" id="p4"></div>
+                <div class="sim-pixel" id="p5"></div>
+                <div class="sim-pixel" id="p6"></div>
+                <div class="sim-pixel" id="p7"></div>
+                <div class="sim-pixel" id="p8"></div>
+                <div class="sim-pixel" id="p9"></div>
+                <div class="sim-pixel" id="p10"></div>
+                <div class="sim-pixel" id="p11"></div>
+                <div class="sim-pixel" id="p12"></div>
+                <div class="sim-pixel" id="p13"></div>
+                <div class="sim-pixel" id="p14"></div>
+                <div class="sim-pixel" id="p15"></div>
+                <div class="sim-pixel" id="p16"></div>
+              </div>
+            </div>
+            <div>
+              <span style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px; display: block; font-weight: 600;">TRAINING CONSOLE LOGS</span>
+              <pre class="sim-log" id="sim-log-text">Simulator ready. Click 'Start Pipeline' to begin.
+</pre>
+            </div>
+          </div>
+
+          <div class="sim-controls">
+            <button class="btn btn-primary" id="ai-run-btn"><i class="fa-solid fa-play"></i> Start Pipeline</button>
+            <button class="btn btn-secondary" id="ai-reset-btn"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-Life Applications -->
+      <div class="section-header" style="margin-top: 60px; margin-bottom: 30px;">
+        <h3>AI Real-Life Applications</h3>
+      </div>
+      <div class="grid-4">
+        <div class="glass-panel" style="padding: 24px;">
+          <i class="fa-solid fa-comments" style="color: var(--accent-purple); font-size: 1.5rem; margin-bottom: 12px;"></i>
+          <h4>Chatbots & LLMs</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">Generating human-like texts, writing code snippets, and managing customer support.</p>
+        </div>
+        <div class="glass-panel" style="padding: 24px;">
+          <i class="fa-solid fa-microphone" style="color: var(--accent-indigo); font-size: 1.5rem; margin-bottom: 12px;"></i>
+          <h4>Voice Assistants</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">Speech-to-text converters processing instructions (e.g. Siri, Alexa).</p>
+        </div>
+        <div class="glass-panel" style="padding: 24px;">
+          <i class="fa-solid fa-compass" style="color: var(--accent-cyan); font-size: 1.5rem; margin-bottom: 12px;"></i>
+          <h4>Recommendation Grids</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">Analyzing viewing histories to predict movies you will like (Netflix, YouTube).</p>
+        </div>
+        <div class="glass-panel" style="padding: 24px;">
+          <i class="fa-solid fa-car" style="color: var(--success); font-size: 1.5rem; margin-bottom: 12px;"></i>
+          <h4>Self-Driving Cars</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">Fusing computer vision streams with steering mechanisms to navigate routes.</p>
+        </div>
+      </div>
+
+      <!-- Advantages, Challenges & Future -->
+      <div class="about-grid" style="margin-top: 40px; margin-bottom: 0;">
+        <div class="glass-panel" style="padding: 30px;">
+          <h4>Advantages & Challenges</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Advantages:</strong> AI automates tedious manual tasks, processes big datasets to find hidden patterns, and runs 24/7 without fatigue.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Challenges:</strong> Algorithms can inherit human biases present in the training datasets. There are also rising ethical concerns about deepfakes and automation displacing human jobs.
+          </p>
+        </div>
+        <div class="glass-panel" style="padding: 30px;">
+          <h4>Future of AI</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            The future of AI lies in multimodal architectures that understand video, voice, and text simultaneously. Researchers are also engineering energy-efficient algorithms to run models locally on handheld chips (Edge AI).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. CLOUD COMPUTING VIEW
+         ========================================== -->
+    <section id="section-cloud" class="page-view">
+      <div class="section-header">
+        <h2>Cloud Computing</h2>
+        <p>Understanding remote servers, shared networks, and software virtualization tiers.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>What is Cloud Computing?</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px; margin-bottom: 16px;">
+            Cloud computing is the on-demand delivery of computing services—including servers, storage, databases, networking, software, and analytics—over the internet ("the cloud").
+          </p>
+          <p style="color: var(--text-secondary);">
+            Instead of buying and maintaining physical server towers in your office cupboard, you lease computing capacity from mega cloud vendors (like Amazon Web Services or Microsoft Azure).
+          </p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>Types of Cloud Deployment</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Public Cloud:</strong> Services owned and run by third-party providers, shared across multiple companies (e.g. AWS, GCP).
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Private Cloud:</strong> Dedicated server infrastructure used exclusively by a single enterprise or banking entity.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Hybrid Cloud:</strong> Combines public and private nodes, allowing data to move seamlessly between them depending on firewall requirements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Models Interactive Pyramid -->
+      <div class="interactive-card glass-panel">
+        <h3>☁️ Service Models Explorer</h3>
+        <p style="color: var(--text-secondary); margin-top: 8px;">Cloud services are split into three main models depending on how much control you manage. Click the layers of the pyramid below to view model details.</p>
+        
+        <div class="cloud-pyramid">
+          <div class="pyramid-tier" id="tier-saas" data-tier="saas">SaaS (Software as a Service)</div>
+          <div class="pyramid-tier active" id="tier-paas" data-tier="paas">PaaS (Platform as a Service)</div>
+          <div class="pyramid-tier" id="tier-iaas" data-tier="iaas">IaaS (Infrastructure as a Service)</div>
+        </div>
+
+        <div class="cloud-detail-box" id="cloud-detail-card">
+          <h4 id="cloud-detail-title" style="color: var(--accent-indigo);">Platform as a Service (PaaS)</h4>
+          <div id="cloud-detail-body" style="color: var(--text-secondary); margin-top: 12px; font-size: 0.95rem;">
+            <p><strong>What it is:</strong> Provides a cloud-hosted platform equipped with operating systems, databases, and environments to build applications.</p>
+            <p><strong>Management:</strong> The cloud provider manages the underlying hardware, networking, OS updates, and storage. Developers manage their own application code and configuration.</p>
+            <p><strong>Target Audience:</strong> Software Developers.</p>
+            <p><strong>Examples:</strong> Heroku, AWS Elastic Beanstalk, Google App Engine, Azure App Service.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Cloud Platforms -->
+      <div class="section-header" style="margin-top: 60px; margin-bottom: 20px;">
+        <h3>Major Cloud Platforms</h3>
+      </div>
+      <div class="cloud-platforms">
+        <div class="platform-card glass-panel">
+          <i class="fa-brands fa-aws" style="color: #ff9900;"></i>
+          <h4>AWS</h4>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Amazon Web Services. The pioneer and largest public cloud vendor globally.</p>
+        </div>
+        <div class="platform-card glass-panel">
+          <i class="fa-solid fa-cubes" style="color: #0078d4;"></i>
+          <h4>Microsoft Azure</h4>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Highly integrated with enterprise Windows software and databases.</p>
+        </div>
+        <div class="platform-card glass-panel">
+          <i class="fa-brands fa-google" style="color: #4285f4;"></i>
+          <h4>Google Cloud</h4>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Famous for advanced data analytics, AI nodes, and Kubernetes container grids.</p>
+        </div>
+      </div>
+
+      <!-- Benefits of Cloud -->
+      <div class="glass-panel" style="padding: 30px; margin-top: 40px;">
+        <h4 style="margin-bottom: 12px;">Benefits of Cloud Computing</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-size: 0.9rem; color: var(--text-secondary);">
+          <div>
+            <strong>💸 Cost Savings:</strong> Pay-as-you-go. Avoid massive initial server capital investments.
+          </div>
+          <div>
+            <strong>🚀 Speed & Scaling:</strong> Deploy code nodes globally within minutes. Upgrade memory with one click.
+          </div>
+          <div>
+            <strong>🔒 Reliability:</strong> Data backup nodes copy disks across multiple cities to prevent data loss.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. CYBERSECURITY VIEW
+         ========================================== -->
+    <section id="section-cybersecurity" class="page-view">
+      <div class="section-header">
+        <h2>Cybersecurity</h2>
+        <p>Safeguarding data, servers, networks, and mobile devices from malicious digital attacks.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>Why Cybersecurity Matters</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px; margin-bottom: 16px;">
+            As our daily routines merge with digital networks, protecting personal records, banking tokens, and national grid networks from cybercriminals has become paramount.
+          </p>
+          <p style="color: var(--text-secondary);">
+            A single security breach can compromise identity logs, cost corporations millions, and paralyze critical public services.
+          </p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>Common Security Threats</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Phishing:</strong> Deceptive emails designed to trick victims into sharing usernames or credit card keys.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Malware:</strong> Malicious scripts (viruses, worms) that corrupt server configurations.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Ransomware:</strong> Malware that encrypts system files, demanding a ransom payment to unlock them.
+          </p>
+        </div>
+      </div>
+
+      <!-- Phishing Interactive Simulation -->
+      <div class="interactive-card glass-panel">
+        <h3>🔍 Interactive Phishing Detector</h3>
+        <p style="color: var(--text-secondary); margin-top: 8px;">Analyze this suspicious email. Spot the security red flags. Click on the dotted underlined phrases to check if it is a threat. (<span id="found-count">0</span> of 3 flags found)</p>
+        
+        <div class="phishing-email-sim">
+          <div class="email-header">
+            <div class="email-meta">From: <span class="email-hotspot" id="spot-sender" data-info="The sender domain 'b4nk-alerts.com' uses typosquatting (using the digit '4' instead of 'a'). Real banks use official corporate domains.">security@support-b4nk-alerts.com</span></div>
+            <div class="email-meta">Subject: <span class="email-hotspot" id="spot-subject" data-info="Phishing emails try to build artificial urgency (e.g. 'Immediate Lockout', '24 Hours') to cause panic so you don't notice discrepancies.">URGENT: Immediate Account Suspension Notice!</span></div>
+          </div>
+          <div class="email-body">
+            <p>Dear Valued Bank Customer,</p>
+            <p style="margin-top: 12px;">We detected unauthorized transactions originating from a foreign IP node on your account. To prevent financial loss, your online banking access will be locked permanently unless you confirm your identity within 24 hours.</p>
+            <p style="margin-top: 12px;">Please click the secure gateway link below to resolve this validation error immediately:</p>
+            <p style="margin-top: 16px; text-align: center;">
+              <span class="email-hotspot" id="spot-link" data-info="Look closely at the landing URL: bank-sec-verify-port.net. Phishing sites construct names that sound legit, but pointing to non-official domains." style="font-weight: bold; color: #1e3a8a; font-size: 1.05rem;">https://secure-bank-sec-verify-port.net/reset/myaccount</span>
+            </p>
+            <p style="margin-top: 20px;">Sincerely,<br>Customer Security Division</p>
+          </div>
+        </div>
+
+        <div class="threat-info-panel" id="threat-info-box">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Security Checklist Scorecard -->
+      <div class="scorecard-container">
+        <div class="glass-panel" style="padding: 30px;">
+          <h3>Personal Security Scorecard</h3>
+          <p style="color: var(--text-secondary); margin-top: 8px; margin-bottom: 20px;">Toggle the hygiene rules below to check your online security index.</p>
+          
+          <div class="checklist-items">
+            <div class="checklist-item">
+              <input type="checkbox" id="chk-1">
+              <div>
+                <strong>I use Two-Factor Authentication (2FA)</strong>
+                <p style="font-size: 0.8rem; color: var(--text-secondary);">Requires entering a mobile token alongside passwords.</p>
+              </div>
+            </div>
+            <div class="checklist-item">
+              <input type="checkbox" id="chk-2">
+              <div>
+                <strong>I use a Password Manager</strong>
+                <p style="font-size: 0.8rem; color: var(--text-secondary);">Generates and keeps unique passwords for every site.</p>
+              </div>
+            </div>
+            <div class="checklist-item">
+              <input type="checkbox" id="chk-3">
+              <div>
+                <strong>I verify sender email domains carefully</strong>
+                <p style="font-size: 0.8rem; color: var(--text-secondary);">I check for minor character swaps or typosquatting.</p>
+              </div>
+            </div>
+            <div class="checklist-item">
+              <input type="checkbox" id="chk-4">
+              <div>
+                <strong>I check links before clicking them</strong>
+                <p style="font-size: 0.8rem; color: var(--text-secondary);">Hovering on links reveals their actual destination paths.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scorecard-display">
+          <div class="gauge-wrapper">
+            <svg class="gauge-svg">
+              <defs>
+                <linearGradient id="gauge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="var(--accent-indigo)"/>
+                  <stop offset="100%" stop-color="var(--accent-purple)"/>
+                </linearGradient>
+              </defs>
+              <circle class="gauge-bg" cx="80" cy="80" r="70"/>
+              <circle class="gauge-fill" cx="80" cy="80" r="70"/>
+            </svg>
+            <div class="gauge-value">0%</div>
+          </div>
+          <div id="security-tips-suggestion" style="font-size: 0.85rem; color: var(--text-secondary);">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. WEB DEVELOPMENT VIEW
+         ========================================== -->
+    <section id="section-webdevelopment" class="page-view">
+      <div class="section-header">
+        <h2>Web Development</h2>
+        <p>Demystifying how code files combine to construct responsive user experiences.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>What is Web Development?</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px; margin-bottom: 16px;">
+            Web development is the process of building, scripting, and hosting websites or web applications that run inside browsers. It is broadly split into two layers: Frontend and Backend.
+          </p>
+          <p style="color: var(--text-secondary);">
+            <strong>Frontend (Client-side):</strong> Everything users see, click, and interact with.
+            <strong>Backend (Server-side):</strong> The engine that processes logic, database queries, and credentials.
+          </p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>The Frontend Stack</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>HTML (Structure):</strong> The markup outline that places text, images, and input boxes on a page.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>CSS (Styling):</strong> The rules defining colors, spacing, borders, layouts, and animations.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>JavaScript (Behavior):</strong> The programming script that handles interface changes, user interactions, and server requests.
+          </p>
+        </div>
+      </div>
+
+      <!-- Web Playground Widget -->
+      <div class="interactive-card glass-panel">
+        <h3>💻 Interactive Code Playground</h3>
+        <p style="color: var(--text-secondary); margin-top: 8px;">See how code operates. Modify the HTML/CSS/JS components inside the editor, then click 'Run Code' to update the preview panel.</p>
+        
+        <div class="dev-playground">
+          <div class="code-editor-panel">
+            <div class="editor-header">
+              <div class="editor-tabs">
+                <button class="editor-tab-btn active" data-lang="html">index.html</button>
+                <button class="editor-tab-btn" data-lang="css">styles.css</button>
+                <button class="editor-tab-btn" data-lang="js">script.js</button>
+              </div>
+              <button class="btn btn-primary" id="run-code-btn" style="padding: 6px 12px; font-size: 0.8rem;"><i class="fa-solid fa-play"></i> Run Code</button>
+            </div>
+            <textarea class="editor-textarea" id="dev-editor-area" spellcheck="false"></textarea>
+          </div>
+
+          <div class="preview-panel">
+            <div class="preview-header">
+              <div class="preview-dot red"></div>
+              <div class="preview-dot yellow"></div>
+              <div class="preview-dot green"></div>
+              <span style="font-size: 0.75rem; color: #64748b; font-family: sans-serif; margin-left: 10px;">Output Preview</span>
+            </div>
+            <iframe class="preview-frame" id="preview-frame"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend stack details -->
+      <div class="glass-panel" style="padding: 30px; margin-top: 40px;">
+        <h4>Understanding the Backend & Infrastructure</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 16px; font-size: 0.9rem; color: var(--text-secondary);">
+          <div>
+            <h5>⚙️ Servers</h5>
+            <p style="margin-top: 6px;">Remote computing nodes running runtime engines (NodeJS, Python, PHP) to listen for browser requests and send data packets back.</p>
+          </div>
+          <div>
+            <h5>🗄️ Databases</h5>
+            <p style="margin-top: 6px;">Structured storage repositories (PostgreSQL, MongoDB) keeping application states, user records, and product assets secure.</p>
+          </div>
+          <div>
+            <h5>🔌 APIs</h5>
+            <p style="margin-top: 6px;">Application Programming Interfaces. Communication protocols that allow client frontend and back databases to exchange data cleanly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. DATA SCIENCE VIEW
+         ========================================== -->
+    <section id="section-datascience" class="page-view">
+      <div class="section-header">
+        <h2>Data Science</h2>
+        <p>Decrypting the lifecycle of parsing, filtering, and mining datasets to uncover strategic decisions.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>What is Data Science?</h3>
+          <p style="color: var(--text-secondary); margin-top: 16px; margin-bottom: 16px;">
+            Data Science is an interdisciplinary field that combines statistical modeling, programming logic, and business domain expertise to extract insights from raw datasets.
+          </p>
+          <p style="color: var(--text-secondary);">
+            Data Scientists build algorithms to predict customer churn, identify credit card fraud patterns, or discover optimal shipping routes.
+          </p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px;">
+          <h3>The Data Science Tools</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Python/R:</strong> Program structures used to scrape, transform, and evaluate records.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>SQL:</strong> Database query strings designed to filter large tables.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+            <strong>Power BI / Tableau:</strong> Graphical dashboards used to present findings to business stakeholders.
+          </p>
+        </div>
+      </div>
+
+      <!-- Data pipeline simulator -->
+      <div class="interactive-card glass-panel">
+        <h3>📊 Interactive Data Pipeline Simulator</h3>
+        <p style="color: var(--text-secondary); margin-top: 8px;">Run raw datasets through cleaning and visual graphing pipelines. Click the control stages below in order.</p>
+        
+        <div class="ds-control-steps" style="display: flex; gap: 12px; flex-wrap: wrap; margin: 20px 0;">
+          <button class="btn btn-secondary">1. Load Raw Data</button>
+          <button class="btn btn-secondary">2. Clean Data</button>
+          <button class="btn btn-secondary">3. Run Analytics</button>
+          <button class="btn btn-primary">4. Plot Charts</button>
+        </div>
+
+        <div class="ds-pipeline">
+          <div class="ds-data-view">
+            <span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">ACTIVE DATABASE RECORDS</span>
+            <div class="ds-table-wrapper">
+              <table class="ds-table">
+                <thead>
+                  <tr>
+                    <th>User ID</th>
+                    <th>Category</th>
+                    <th>Purchase ($)</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#101</td>
+                    <td>Tech</td>
+                    <td>1,200</td>
+                    <td>Valid</td>
+                  </tr>
+                  <tr class="dirty-row">
+                    <td>#102</td>
+                    <td>Fashion</td>
+                    <td>NULL</td>
+                    <td>N/A Error</td>
+                  </tr>
+                  <tr>
+                    <td>#103</td>
+                    <td>Fashion</td>
+                    <td>150</td>
+                    <td>Valid</td>
+                  </tr>
+                  <tr>
+                    <td>#104</td>
+                    <td>Tech</td>
+                    <td>800</td>
+                    <td>Valid</td>
+                  </tr>
+                  <tr class="dirty-row">
+                    <td>#105</td>
+                    <td>Food</td>
+                    <td>-99.9</td>
+                    <td>Garbage Entry</td>
+                  </tr>
+                  <tr>
+                    <td>#106</td>
+                    <td>Fashion</td>
+                    <td>450</td>
+                    <td>Valid</td>
+                  </tr>
+                  <tr>
+                    <td>#107</td>
+                    <td>Food</td>
+                    <td>75</td>
+                    <td>Valid</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="ds-chart-view">
+            <span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">VISUALIZED CATEGORY SALES</span>
+            <div class="ds-chart-container">
+              <div class="ds-bar-wrapper">
+                <div class="ds-bar" id="bar-tech"><span>$2,000</span></div>
+                <div class="ds-bar-label">Tech</div>
+              </div>
+              <div class="ds-bar-wrapper">
+                <div class="ds-bar" id="bar-fashion"><span>$600</span></div>
+                <div class="ds-bar-label">Fashion</div>
+              </div>
+              <div class="ds-bar-wrapper">
+                <div class="ds-bar" id="bar-food"><span>$75</span></div>
+                <div class="ds-bar-label">Food</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. EMERGING TECH VIEW
+         ========================================== -->
+    <section id="section-emergingtech" class="page-view">
+      <div class="section-header">
+        <h2>Emerging Technologies</h2>
+        <p>Discover next-generation paradigms that are reshaping the digital boundaries.</p>
+      </div>
+
+      <!-- Horizontal Cards Toggles -->
+      <div class="emerging-cards">
+        <button class="emerging-card-btn active" data-tech="blockchain">
+          <i class="fa-solid fa-link"></i>
+          <h4>Blockchain</h4>
+        </button>
+        <button class="emerging-card-btn" data-tech="iot">
+          <i class="fa-solid fa-house-signal"></i>
+          <h4>IoT</h4>
+        </button>
+        <button class="emerging-card-btn" data-tech="quantum">
+          <i class="fa-solid fa-atom"></i>
+          <h4>Quantum Computing</h4>
+        </button>
+        <button class="emerging-card-btn" data-tech="arvr">
+          <i class="fa-solid fa-vr-cardboard"></i>
+          <h4>AR & VR</h4>
+        </button>
+        <button class="emerging-card-btn" data-tech="robotics">
+          <i class="fa-solid fa-gears"></i>
+          <h4>Robotics</h4>
+        </button>
+      </div>
+
+      <!-- Detail Card Content -->
+      <div class="emerging-detail-display glass-panel" id="emerging-info-body">
+        <!-- Content gets swapped by JS -->
+      </div>
+    </section>
+
+    <!-- ==========================================
+         9. CAREER PATHS VIEW
+         ========================================== -->
+    <section id="section-careerpaths" class="page-view">
+      <div class="section-header">
+        <h2>Technology Career Paths</h2>
+        <p>Explore roadmap guides, required skills, and tools for top-tier technology careers.</p>
+      </div>
+
+      <div class="roadmap-container">
+        <!-- Left Side Career Toggles -->
+        <div class="roadmap-menu">
+          <button class="roadmap-menu-btn active" data-path="software">
+            <i class="fa-solid fa-laptop-code"></i> Software Development
+          </button>
+          <button class="roadmap-menu-btn" data-path="ai">
+            <i class="fa-solid fa-brain"></i> Artificial Intelligence
+          </button>
+          <button class="roadmap-menu-btn" data-path="cyber">
+            <i class="fa-solid fa-key"></i> Cybersecurity
+          </button>
+          <button class="roadmap-menu-btn" data-path="datascience">
+            <i class="fa-solid fa-calculator"></i> Data Science
+          </button>
+          <button class="roadmap-menu-btn" data-path="cloud">
+            <i class="fa-solid fa-network-wired"></i> Cloud Computing
+          </button>
+        </div>
+
+        <!-- Right Side Interactive Roadmap flowchart Nodes -->
+        <div class="roadmap-display glass-panel">
+          <h3 id="roadmap-details-title" class="gradient-text-purple-cyan">Software Development Roadmap</h3>
+          <p style="color: var(--text-secondary); margin-top: 6px; font-size: 0.9rem;">Click on the roadmap nodes below to expand skill requirements, tools, and career options.</p>
+          
+          <div class="roadmap-visual" id="roadmap-nodes">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         10. TIMELINE VIEW
+         ========================================== -->
+    <section id="section-timeline" class="page-view">
+      <div class="section-header">
+        <h2>Technology Timeline</h2>
+        <p>Tracing the milestones that powered the modern computing age.</p>
+      </div>
+
+      <div class="timeline-flow">
+        <!-- 1940s -->
+        <div class="timeline-event">
+          <div class="glass-panel" style="padding: 24px;">
+            <div class="timeline-badge">1940s</div>
+            <h4>First Computing Machines</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 8px;">The creation of ENIAC and the foundations of programmable computer systems. Designed using vacuum tubes to perform arithmetic calculations for military routing.</p>
+          </div>
+        </div>
+
+        <!-- 1969 -->
+        <div class="timeline-event">
+          <div class="glass-panel" style="padding: 24px;">
+            <div class="timeline-badge">1969</div>
+            <h4>ARPANET (Beginnings of Internet)</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 8px;">The first connection established between computers at UCLA and Stanford. Designed to test packet-switching technologies to ensure communications survive node failures.</p>
+          </div>
+        </div>
+
+        <!-- 1990s -->
+        <div class="timeline-event">
+          <div class="glass-panel" style="padding: 24px;">
+            <div class="timeline-badge">1990s</div>
+            <h4>World Wide Web Launched</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 8px;">Tim Berners-Lee introduces HTTP and HTML protocols at CERN. Information sharing transitions from terminal directories to interconnected visual pages.</p>
+          </div>
+        </div>
+
+        <!-- 2007 -->
+        <div class="timeline-event">
+          <div class="glass-panel" style="padding: 24px;">
+            <div class="timeline-badge">2007</div>
+            <h4>Smartphone Revolution</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 8px;">Mobile terminals transition into fully functional computing devices. Accessing servers, databases, and GPS directions is condensed onto portable glass displays.</p>
+          </div>
+        </div>
+
+        <!-- 2020s -->
+        <div class="timeline-event">
+          <div class="glass-panel" style="padding: 24px;">
+            <div class="timeline-badge">2020s</div>
+            <h4>The AI & Neural Net Boom</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 8px;">Generative pre-trained transformers unlock conversational interfaces. Neural networks process natural language, compile layouts, and support creative workspaces.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Quick link to FAQ -->
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="#/faq" class="btn btn-outline route-btn">Got Questions? View FAQ <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         11. FAQ VIEW
+         ========================================== -->
+    <section id="section-faq" class="page-view">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Got a question about getting started in tech? We have answers.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            What technology should I learn first?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            For absolute beginners, we recommend starting with Web Development (HTML, CSS, and basic JavaScript). The results of your code are immediate and visual, which helps reinforce basic programming concepts like variables, conditionals, and functions.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is coding necessary for every tech career?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            No, coding is not mandatory for every tech career. Roles like UI/UX Designer, Product Manager, Scrum Master, Business Analyst, or Technical Recruiter focus more on design, logistics, and communication rather than writing raw code scripts.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How can beginners start learning technology?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Start by picking one specific domain (like Web Dev or Python scripting). Use free interactive tutorials, build tiny projects (e.g. a simple landing page or calculator), and gradually increase complexity rather than trying to study everything at once.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is AI replacing software developers?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            No, AI is not replacing software developers; rather, it is transforming their workflows. Developers use AI models to write code faster, search documentation quickly, and write test suites. Human decision-making, planning architecture, and business logic remain crucial.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Which technology field has the best future?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Artificial Intelligence (MLOps, LLM alignment), Cybersecurity (as threats become more complex), and Cloud Architecture remain top fields with expanding growth and significant employment opportunities.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         12. CONTACT VIEW
+         ========================================== -->
+    <section id="section-contact" class="page-view">
+      <div class="section-header">
+        <h2>Contact & Feedback</h2>
+        <p>Get in touch with us or leave your suggestions to help us improve the platform.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form Box -->
+        <div class="glass-panel contact-form-wrapper">
+          <h3>Send us a Message</h3>
+          <form id="tech-contact-form" style="margin-top: 24px;">
+            <div class="form-group">
+              <label for="form-name">Full Name *</label>
+              <input type="text" id="form-name" class="form-control" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address *</label>
+              <input type="email" id="form-email" class="form-control" required placeholder="name@domain.com">
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" class="form-control" placeholder="What are you writing about?">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message / Suggestion *</label>
+              <textarea id="form-message" class="form-control" required placeholder="Share your suggestions or questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Feedback</button>
+          </form>
+        </div>
+
+        <!-- Info & Suggestions wall -->
+        <div class="contact-info-wrapper">
+          <div class="glass-panel contact-info-card">
+            <h3>Connect With Us</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 10px; margin-bottom: 24px;">Have questions about our syllabus? Connect through our official channels.</p>
+            
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong><br>
+                <a href="mailto:abhinavtiwary2007@gmail.com" style="color: var(--text-secondary); font-size: 0.9rem; text-decoration: none;">abhinavtiwary2007@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="fa-solid fa-share-nodes"></i>
+              <div>
+                <strong>Social Media</strong>
+                <div class="social-links">
+                  <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://github.com/Abhinavti12" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://twitter.com" target="_blank" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live feedback wall widget -->
+          <div class="glass-panel contact-info-card feedback-list-box">
+            <h3>Suggestions Shared by Users</h3>
+            <p style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 6px;">Check out feedback from other learners in our community.</p>
+            
+            <div class="feedback-items-container" id="feedback-wall">
+              <!-- Dynamically populated from localStorage/JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Navigation Page Router Link Hook (Route links from home cards to individual topics) -->
+  <script src="app.js"></script>
+
+  <!-- Sticky Footer -->
+  <footer>
+    <div class="container">
+      <p>Tech Explained &copy; 2026. Created with <span style="color: var(--accent-purple);">♥</span> by <a href="https://github.com/Abhinavti12" target="_blank" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;">Abhinav Tiwary</a> for students and tech enthusiasts globally.</p>
+      <div style="font-size: 0.8rem; color: var(--text-muted);">
+        <a href="#/about" class="route-btn" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">About Us</a> | 
+        <a href="#/faq" class="route-btn" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">FAQ</a> | 
+        <a href="#/contact" class="route-btn" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
