@@ -1005,36 +1005,6 @@ function initFaqAccordion() {
    ========================================================================== */
 function initContactForm() {
   const contactForm = document.getElementById('tech-contact-form');
-  const feedbackContainer = document.getElementById('feedback-wall');
-
-  // Load existing feedback from local storage
-  function loadFeedback() {
-    feedbackContainer.innerHTML = '';
-    const items = JSON.parse(localStorage.getItem('tech_feedback') || '[]');
-    
-    // If empty, supply mock entries
-    if (items.length === 0) {
-      const mockItems = [
-        { name: "Jessica Lim", time: "2 hours ago", text: "The Cybersecurity Phishing simulation is brilliant! I shared it with my students." },
-        { name: "Rahul Sharma", time: "1 day ago", text: "Love the interactive AI pipeline training tool. It made the concept of epochs and learning loss super clear." }
-      ];
-      localStorage.setItem('tech_feedback', JSON.stringify(mockItems));
-      items.push(...mockItems);
-    }
-
-    items.forEach(item => {
-      const fbCard = document.createElement('div');
-      fbCard.className = 'feedback-card';
-      fbCard.innerHTML = `
-        <div class="feedback-card-header">
-          <span class="feedback-card-name">${escapeHTML(item.name)}</span>
-          <span>${item.time}</span>
-        </div>
-        <p>${escapeHTML(item.text)}</p>
-      `;
-      feedbackContainer.appendChild(fbCard);
-    });
-  }
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -1050,27 +1020,13 @@ function initContactForm() {
         return;
       }
 
-      // Add feedback to the list
-      const items = JSON.parse(localStorage.getItem('tech_feedback') || '[]');
-      items.unshift({
-        name: name,
-        time: "Just now",
-        text: message
-      });
-      localStorage.setItem('tech_feedback', JSON.stringify(items));
-
-      // Reload feedback wall
-      loadFeedback();
-
       // Reset form
       contactForm.reset();
 
       // Alert success
-      alert(`Thank you, ${name}! Your suggestions have been published to the feedback wall below.`);
+      alert(`Thank you, ${name}! Your message has been sent successfully.`);
     });
   }
-
-  loadFeedback();
 }
 
 /* ==========================================================================
